@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>TheMightyRunes</title>
+    <style>
+        body { background: #1a1a1a; color: #d4af37; font-family: 'Courier New', Courier, monospace; padding: 20px; }
+        #output { border: 1px solid #d4af37; padding: 20px; height: 300px; overflow-y: scroll; margin-bottom: 10px; background: #000; }
+        #input-area { display: flex; gap: 10px; }
+        input { flex-grow: 1; background: #333; border: 1px solid #d4af37; color: #fff; padding: 10px; }
+        button { background: #d4af37; border: none; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>TheMightyRunes</h1>
+    <div id="output">Willkommen in der Welt der Runen. Du stehst vor dem ersten Turm. Was willst du tun?</div>
+    <div id="input-area">
+        <input type="text" id="command" placeholder="Befehl eingeben (z.B. erkunden, status)...">
+        <button onclick="handleInput()">Senden</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
